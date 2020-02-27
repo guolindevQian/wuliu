@@ -1,0 +1,32 @@
+<view>
+  <image src='https://m.qpic.cn/psb?/V14JKMah4DngR8/NKZYA1yyriZIBD0uNfb8A1HlZl0LCIqdXSQjOY*oIHQ!/b/dFQBAAAAAAAA&bo=gALgAQAAAAARB1M!&rf=viewer_4' style='width:100%'></image>
+</view>
+
+<view >
+  <view class='h0'>{{name}}</view>
+  <view class='h1' bindtap='tophone'>
+    电话：{{shouji1}}/{{shouji2}}/{{shouji3}}
+    <image src='../../icon/dianhua.png'style='width:40rpx;height:40rpx;float:right;'></image> 
+  </view>
+  <view class='h1' bindtap='totousu'> 投诉电话：{{phone}}<image src='../../icon/tousudianhua.png'style='width:40rpx;height:40rpx;float:right;'></image></view>
+  <view class='h1' bindtap='click'>地址：{{dizhi}}<image src='../../icon/shouhuodizhi.png'style='width:40rpx;height:40rpx;float:right;'></image></view>
+  <view class='h1'>网址：{{wangzhi}}<image src='../../icon/wangzhi.png'style='width:40rpx;height:40rpx;float:right;'></image></view>
+  <view class='h1'>邮箱：{{youxiang}}<image src='../../icon/youxiang.png'style='width:40rpx;height:40rpx;float:right;'></image></view>
+  <view class='h2'>
+    <view class='h3' bindtap='click'>
+    <image src='../../icon/yijiandaohang.png'style='width:40rpx;height:40rpx;float:left;padding-right:40rpx;padding-left:40rpx;'></image>
+    一键导航
+    </view>
+    <view class='h3' bindtap='tophone'>
+    <image src='../../icon/lianxiwomen.png'style='width:40rpx;height:40rpx;float:left;padding-right:40rpx;padding-left:40rpx;'></image>
+    电话咨询</view>
+  </view>
+  <view>
+    <image src='{{url}}' style='width:100%;height:1000rpx;'bindtap="previewImage" data-index='{{index}}'></image>
+  </view>
+
+</view>
+<view style='font-size:25rpx;text-align:center;background:white;padding:20rpx;opacity: 0.5;'bindtap="totianxiphone">
+  <image src='../../icon/lianxiwomen.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>-由深圳信诚天下电子商务有限公司提供技术支持-</text>
+</view>

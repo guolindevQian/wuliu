@@ -1,0 +1,133 @@
+<view style=' position: fixed;top: 0;width:100%'>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval1}}" duration="{{duration}}" circular="{{circular}}" indicator-dots="{{indicator}}"  style='height:400rpx;'>
+  <block wx:for="{{imgUrls}}" wx:key="item">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+
+<view style='padding-top:400rpx;margin-top:20rpx;'>
+  <view>
+    <image src='{{jian}}' style='width:100%;height:100rpx;'bindtap="previewImage" data-index='{{index}}'></image>
+  </view>
+
+</view>
+
+<view class='h0' >
+  
+  <view wx:for="{{xiangqing}}" wx:key="item" class='h1'>
+  <view wx:if="{{index==0}}" bindtap='tophone1'>
+    <view>
+      <view style='color:red'>
+        <image src='../../icon/shixin.png' style='width:40rpx;height:40rpx'></image>
+       {{item.name}}</view>
+      <view>取货地址：{{item.address}}</view>
+      <view>
+      
+      服务热线：{{item.phone}}<image src='../../icon/lianxiwomen.png' style='width:40rpx;height:40rpx'></image></view>
+    </view>
+
+  </view>
+
+  <view wx:if="{{index==1}}" bindtap='tophone2'>
+    <view>
+      <view style='color:red'>
+        <image src='../../icon/shixin.png' style='width:40rpx;height:40rpx'></image>
+       {{item.name}}</view>
+      <view>取货地址：{{item.address}}</view>
+      <view>
+      
+      服务热线：{{item.phone}}<image src='../../icon/lianxiwomen.png' style='width:40rpx;height:40rpx'></image></view>
+    </view>
+
+  </view>
+
+  <view wx:if="{{index==2}}" bindtap='tophone3'>
+    <view>
+      <view style='color:red'>
+        <image src='../../icon/shixin.png' style='width:40rpx;height:40rpx'></image>
+       {{item.name}}</view>
+      <view>取货地址：{{item.address}}</view>
+      <view>
+      
+      服务热线：{{item.phone}}<image src='../../icon/lianxiwomen.png' style='width:40rpx;height:40rpx'></image></view>
+    </view>
+
+  </view>
+
+  <view wx:if="{{index==3}}" bindtap='tophone4'>
+    <view>
+      <view style='color:red'>
+        <image src='../../icon/shixin.png' style='width:40rpx;height:40rpx'></image>
+       {{item.name}}</view>
+      <view>取货地址：{{item.address}}</view>
+      <view>
+      
+      服务热线：{{item.phone}}<image src='../../icon/lianxiwomen.png' style='width:40rpx;height:40rpx'></image></view>
+    </view>
+
+  </view>
+
+  <view wx:if="{{index==4}}" bindtap='tophone5'>
+    <view>
+      <view style='color:red'>
+        <image src='../../icon/shixin.png' style='width:40rpx;height:40rpx'></image>
+       {{item.name}}</view>
+      <view>取货地址：{{item.address}}</view>
+      <view>
+      
+      服务热线：{{item.phone}}<image src='../../icon/lianxiwomen.png' style='width:40rpx;height:40rpx'></image></view>
+    </view>
+
+  </view>
+
+  <view wx:if="{{index==5}}" bindtap='tophone6'>
+    <view>
+      <view style='color:red'>
+        <image src='../../icon/shixin.png' style='width:40rpx;height:40rpx'></image>
+       {{item.name}}</view>
+      <view>取货地址：{{item.address}}</view>
+      <view>
+      
+      服务热线：{{item.phone}}<image src='../../icon/lianxiwomen.png' style='width:40rpx;height:40rpx'></image></view>
+    </view>
+
+  </view>
+
+  <view wx:if="{{index==6}}" bindtap='tophone7'>
+    <view>
+      <view style='color:red'>
+        <image src='../../icon/shixin.png' style='width:40rpx;height:40rpx'></image>
+       {{item.name}}</view>
+      <view>取货地址：{{item.address}}</view>
+      <view>
+      
+      服务热线：{{item.phone}}<image src='../../icon/lianxiwomen.png' style='width:40rpx;height:40rpx'></image></view>
+    </view>
+
+  </view>
+
+  <view wx:if="{{index==7}}" bindtap='tophone8'>
+    <view>
+      <view style='color:red'>
+        <image src='../../icon/shixin.png' style='width:40rpx;height:40rpx'></image>
+       {{item.name}}</view>
+      <view>取货地址：{{item.address}}</view>
+      <view>
+      
+      服务热线：{{item.phone}}<image src='../../icon/lianxiwomen.png' style='width:40rpx;height:40rpx'></image></view>
+    </view>
+
+  </view>
+
+  </view>
+
+</view>
+
+<view style='font-size:25rpx;text-align:center;background:white;padding:20rpx;opacity: 0.5;'bindtap="totianxiphone">
+  <image src='../../icon/lianxiwomen.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>-由深圳信诚天下电子商务有限公司提供技术支持-</text>
+</view>

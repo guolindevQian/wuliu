@@ -1,0 +1,46 @@
+<view>
+  <image src='https://m.qpic.cn/psb?/V14JKMah4DngR8/Gn03g5vhfXPuyPrtfZWRjbAEja2DCsY61TcFTpjCQxU!/b/dDYBAAAAAAAA&bo=SwIrAQAAAAARB1M!&rf=viewer_4' style='width:100%;height:400rpx;'></image>
+</view>
+<view>
+  <view style='float:left;color:red;font-weight:700;margin-left:20rpx;'>
+    公司简介：
+</view>
+<view style='padding-top:50rpx;margin:50rpx;' >
+    <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      {{jianjie1}}
+  </view>
+</view>
+  <view style='color:red;font-weight:700;margin-left:20rpx;'>
+    分部介绍：
+</view>
+
+<view>
+    <view wx:for="{{fenbu}}" wx:key="item">
+      <view wx:if="{{index==0}}" >
+      <image src='{{item}}' style='width:100%;height:1000rpx;'bindtap="previewImage" data-index='{{index}}'></image>
+      </view>
+    <view wx:elif="{{index==1 || index==2}}" >
+      <image src='{{item}}' style='width:100%;height:600rpx;'bindtap="previewImage" data-index='{{index}}'></image>
+      </view>
+      <view wx:elif="{{index==3}}" >
+      <image src='{{item}}' style='width:100%;height:300rpx;'bindtap="previewImage" data-index='{{index}}'></image>
+      </view>
+      <view wx:elif="{{index==4}}" >
+      <image src='{{item}}' style='width:100%;height:1400rpx;'bindtap="previewImage" data-index='{{index}}'></image>
+      </view>
+      <view wx:elif="{{index==6}}" >
+      <image src='{{item}}' style='width:100%;height:700rpx;'bindtap="previewImage" data-index='{{index}}'></image>
+      </view>
+      <view wx:else="{{index==5}}" >
+      <image src='{{item}}' style='width:100%;height:1400rpx;'bindtap="previewImage" data-index='{{index}}'></image>
+      </view>
+      
+    </view>
+   
+    <view>
+    </view>
+</view>
+<view style='font-size:25rpx;text-align:center;background:white;padding:20rpx;opacity: 0.5;'bindtap="totianxiphone">
+  <image src='../../icon/lianxiwomen.png'style='width:40rpx;height:40rpx;float:left;'></image>
+  <text>-由深圳信诚天下电子商务有限公司提供技术支持-</text>
+</view>

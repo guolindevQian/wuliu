@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/jieshao/jieshao",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "老胡物流",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icon/home.png",
+      "selectedIconPath": "icon/home-select.png"
+    },
+    {
+      "pagePath": "pages/jieshao/jieshao",
+      "text": "公司介绍",
+      "iconPath": "icon/gongsi.png",
+      "selectedIconPath": "icon/gongsiselect.png"
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "联系我们",
+      "iconPath": "icon/fuwu.png",
+      "selectedIconPath": "icon/fuwuselect.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}

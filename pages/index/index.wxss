@@ -1,0 +1,21 @@
+page{
+  background: whitesmoke;
+}
+.slide-image{
+  width: 100%;
+  height: 100%
+}
+.h0{
+
+  background:#BFEFFF;
+  background-size: cover;
+  width:100%;
+  padding-top: 10rpx;
+  height: 2000rpx;
+  font-size: 30rpx;
+}
+.h1{
+  padding: 30rpx;
+  background: white;
+  margin:20rpx;
+}
